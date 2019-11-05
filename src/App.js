@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import NumberButton from "./components/ButtonComponents/NumberButtons/NumberButton";
 import OperatorButton from "./components/ButtonComponents/OperatorButtons/OperatorButton";
+import SpecialButton from "./components/ButtonComponents/SpecialButtons/SpecialButton";
 // STEP 4 - import the button and display components
 // Don't forget to import any extra css/scss files 
 // you build into the correct component
@@ -30,6 +31,7 @@ function App() {
       <Logo />
       <NumberButton/>
       <OperatorButton/> 
+      <SpecialButton/> 
       
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to 
