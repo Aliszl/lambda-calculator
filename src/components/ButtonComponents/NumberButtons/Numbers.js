@@ -5,7 +5,7 @@ import {numbers} from "../../../data";
 const Numbers = (props) => {
   // STEP 2 - add the imported data to state
 console.log(numbers);
-  const [getStateX,setStatex]= useState(numbers);
+  const [getStateX,setStateX]= useState(numbers);
   return (
     <div>
       {/* /* STEP 3 - Use .map() within curly braces 
@@ -15,7 +15,7 @@ console.log(numbers);
        it any props needed by the child component*/ }
       {
           getStateX.map((element)=>{
-             return <button onClick = {() => props.click(element)} >{element}</button>
+             return <button className="numbers" onClick = {() => props.click(element)} >{element}</button>
           })
       }
     </div>

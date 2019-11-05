@@ -7,7 +7,7 @@ const Specials = () => {
 console.log(specials);
   const [getState,setState]= useState(specials);
   return (
-    <div>
+    <div className = "special">
       {
           getState.map((element)=>{
              return <button>{element}</button>

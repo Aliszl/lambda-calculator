@@ -24,9 +24,9 @@ function App() {
     <div className="container">
       <Logo />
       <Display  amount = {amount} />
+      <SpecialButton/> 
       <NumberButton click={clickHandler}/>
       <OperatorButton/> 
-      <SpecialButton/> 
       
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to 

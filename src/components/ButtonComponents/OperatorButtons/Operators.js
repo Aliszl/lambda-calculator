@@ -8,7 +8,7 @@ const Operators = () => {
 console.log(operators);
   const [getState,setState]= useState(operators);
   return (
-    <div>
+    <div className ="operator-box">
       {
           getState.map((element)=>{
              return <button>{element.value}</button>
