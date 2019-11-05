@@ -10,6 +10,7 @@ import SpecialButton from "./components/ButtonComponents/SpecialButtons/SpecialB
 // Logo has already been provided for you. 
 // Do the same for the remaining components
 import Logo from "./components/DisplayComponents/Logo";
+import Display from "./components/DisplayComponents/Display"
 
 function App() {
   // STEP 5 - After you get the components displaying 
@@ -32,6 +33,7 @@ function App() {
       <NumberButton/>
       <OperatorButton/> 
       <SpecialButton/> 
+      <Display/>
       
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to 
