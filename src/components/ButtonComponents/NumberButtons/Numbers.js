@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import {numbers} from "../../../data";
 
 
-const Numbers = () => {
+const Numbers = (props) => {
   // STEP 2 - add the imported data to state
 console.log(numbers);
   const [getStateX,setStatex]= useState(numbers);
@@ -15,7 +15,7 @@ console.log(numbers);
        it any props needed by the child component*/ }
       {
           getStateX.map((element)=>{
-             return <button>{element}</button>
+             return <button onClick = {() => props.click(element)} >{element}</button>
           })
       }
     </div>

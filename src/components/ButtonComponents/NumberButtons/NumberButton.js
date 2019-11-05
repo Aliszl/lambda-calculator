@@ -1,9 +1,9 @@
 import React from "react";
 import Numbers from "./Numbers"
-const NumberButton = () => {
+const NumberButton = (props) => {
   return (
     <>
-     <Numbers/> 
+     <Numbers click = {props.click}/> 
     </>
   );
 };
